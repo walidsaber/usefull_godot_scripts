@@ -1,0 +1,21 @@
+
+# Note 1: in dialogue if you want a random text type this :  [[choice1|choice2|choice3]]
+# Note 2: Dialogue lines can contain variables wrapped in "{{}}" (in either the character name or the dialogue).
+#variables must be either globals or in the Dialogue Manager settings.
+#This is a line said by nobody.
+#Nathan: I am saying this line.
+#Nathan: The value of some_variable is {{SomeGlobal.some_property}}.
+# Note 3: Comments [#happy, #surprised] or # at the start, # will be ignored
+# Note 4: Nathan: I will say this. (picking a random line)
+		% Nathan: And then I might say this
+		% Nathan: Or maybe this
+		% Nathan: Or even this?
+# Note 5: jump to a title => / jump to a title and go back => <
+# Note 6:
+if SomeGlobal.has_met_nathan == false
+    do SomeGlobal.animate("Nathan", "Wave")
+    Nathan: Hi, I'm Nathan.
+    set SomeGlobal.has_met_nathan = true
+Nathan: What can I do for you?
+- Tell me more about this dialogue editor
+# Note 7:

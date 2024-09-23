@@ -16,9 +16,9 @@ func scatter(d,speed_scatter):
 	if global_position != target_global_position and not target_reached:
 		global_position = global_position.move_toward(target_global_position, speed_scatter/2 * d)
 
-ready : astar = tile_map.astar
+#ready : astar = tile_map.astar
 
-(tile map code)
+#(tile map code)
 func assigning_astar(P):
 	if P == null:
 		return

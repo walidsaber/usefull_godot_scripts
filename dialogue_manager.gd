@@ -8,3 +8,4 @@ extends Something
 
 func action() -> void:
 	dialogueManager.show_example_dialogue_ballon(dialogue_resource, dialogue_start)
+
